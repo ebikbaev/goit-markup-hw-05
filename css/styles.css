@@ -348,7 +348,7 @@ body {
   color: #434455;
 }
 .btn {
-  transition-property: color, background-color;
+  transition-property: color, background-color, box-shadow, border-color;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
   border-radius: 4px;
@@ -565,7 +565,7 @@ body {
   height: 100%;
   background-color: var(--iris);
   transform: translateY(100%);
-  transition: transform 250ms var(--cubic-bezier);
+  transition: transform, box-shadow 250ms var(--cubic-bezier);
 }
 .photo-link:hover .overlay,
 .photo-link:focus .overlay {
@@ -583,6 +583,7 @@ body {
 }
 .header-anim {
   position: relative;
+  color: var(--ocean);
 }
 .header-anim::after {
   content: "";
@@ -591,6 +592,7 @@ body {
   width: 100%;
   height: 4px;
   position: absolute;
+
   background: var(--ocean);
   border-radius: 2px;
 }
